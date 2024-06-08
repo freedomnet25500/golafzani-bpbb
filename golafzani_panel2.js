@@ -14,7 +14,9 @@ import { connect } from 'cloudflare:sockets';
 
 // یویوآیدی را تنظیم کنید
 // بهترین سایت برای برداشتن یویوآیدی اختصاصی: https://fusionauth.io/dev-tools/uuid-generator
-let userID = 'UUID_SHOMA';
+let userID = '        ';
+
+ 
 //در صورت ارور یویوآیدی یبار یویوآیدی را پاک کرده و دوباره وارد کنید و دپلوی و سیو را بزنید
 
 //بهترین بات تلگرام آی پی تمیز = @cfcleanipbot
@@ -1702,7 +1704,7 @@ const renderHomePage = async (request, env, hostName, fragConfigs) => {
 				border-radius: 5px;
 				font-size: 16px;
 				color: #333;
-				background-color: #4a4646;
+				background-color:#f4f4f4;
 				box-sizing: border-box;
 				margin-bottom: 15px;
 				transition: border-color 0.3s ease;
@@ -1815,7 +1817,7 @@ const renderHomePage = async (request, env, hostName, fragConfigs) => {
                 border-radius: 5px;
                 font-size: 16px;
                 color: #333;
-                background-color: #4a4646;
+                background-color: #f4f4f4;
                 box-sizing: border-box;
                 margin-bottom: 15px;
                 transition: border-color 0.3s ease;
@@ -1873,8 +1875,6 @@ const renderHomePage = async (request, env, hostName, fragConfigs) => {
 
 
 
-<p align='center'><img src='https://s8.uupload.ir/files/clxu3_txya.jpg' alt='توضیحات تصویر' style='margin-bottom: -50px;'>
-
     <body>
 		<h1>GolafzaniPanel <span style="font-size: smaller;">${panelVersion}</span> 📡</h1>
 		<div class="form-container">
@@ -1912,7 +1912,6 @@ const renderHomePage = async (request, env, hostName, fragConfigs) => {
 				<div class="form-control">
 					<label for="outProxy">✈️ پراکسی زنجیره ای</label>
 					<input type="text" id="outProxy" name="outProxy" value="${outProxy}">
-                    <h2>! تنظیمات فرگمنت بر روی تی.ال.اس هلو میباشد و فرگمنت در هر اپراتور تاثیر دارد !</h2>
 				</div>
                 <h2>مسیریابی فرگمنت ⚙️</h2>
 				<div class="form-control" style="margin-bottom: 20px;">			
@@ -1943,12 +1942,10 @@ const renderHomePage = async (request, env, hostName, fragConfigs) => {
 					<label for="cleanIPs">✨ آی-پی های تمیز</label>
 					<input type="text" id="cleanIPs" name="cleanIPs" value="${cleanIPs.replaceAll(",", " , ")}">
 
-                    <embed src="https://scanner.github1.cloud/" style="width:400px; height: 200px;"> <b style='font-size: 15px;'>پنل نیکچهره - گل افزانی // میتوانید با استفاده از اسکنر آی.آر.سی.اف آیپی تمیز دریافت کنید (پیشنهاد ما ربات @cfcleanipbot است</b>
-
                 </div>
 				<div id="apply" class="form-control">
 					<div style="grid-column: 2; width: 100%;">
-						<input type="submit" id="applyButton" class="button disabled" value="دخیره پارامتربندی💥" form="configForm">
+						<input type="submit" id="applyButton" class="button disabled" value="ذخیره تغییرات" form="configForm">
 					</div>
 				</div>
 			</form>
